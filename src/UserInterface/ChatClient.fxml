@@ -6,7 +6,11 @@
 <?import javafx.scene.control.TextArea?>
 <GridPane fx:controller="UserInterface.ChatClientController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <Label text="Enter an IP Address"/>
-    <TextArea fx:id="ipTextArea"/>
-    <Button text="Submit IP" onAction="#submitIp"/>
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Enter an IP Address"/>
+    <TextArea GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="ipTextArea" maxHeight="30"/>
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="2" text="Submit IP" onAction="#submitIp"/>
+
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Enter Message"/>
+    <TextArea GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="messageTextArea" maxHeight="400"/>
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="2" text="Send Message" onAction="#SendMessage"/>
 </GridPane>

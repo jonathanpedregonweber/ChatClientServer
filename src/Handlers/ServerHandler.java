@@ -58,4 +58,19 @@ public class ServerHandler
         return messages;
     }
 
+    public void SendMessage(String text)
+    {
+        try (Socket socket = new Socket(IpAddress, PortNumber))
+        {
+
+        }
+        catch (UnknownHostException e)
+        {
+            e.printStackTrace();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
 }
